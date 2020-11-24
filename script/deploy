@@ -2,5 +2,6 @@
 cd ~/prod/bee
 git pull
 npm install --production
+sed -i -e "s/3000/80/g" index.js
 pm2 restart all
 exit
